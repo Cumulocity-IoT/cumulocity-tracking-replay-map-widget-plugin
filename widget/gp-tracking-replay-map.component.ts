@@ -376,12 +376,12 @@ export class GpTrackingReplayMapComponent implements OnInit, AfterViewInit {
       this.movingMarker.removeFrom(this.map);
     }
     this.movingMarker = L.Marker.movingMarker(
-    [this.startingPoints, this.startingPoints],
-    [1000],
-    { icon: this.myIcon },
-  );
+      [this.startingPoints, this.startingPoints],
+      [1000],
+      { icon: this.myIcon },
+    );
     this.movingMarker.on('click', this.showMarkerLatLng);
-    this.movingMarker.bindPopup('lat: ' + this.movingMarker.getLatLng().lat + ',<br> lng: ' + this.movingMarker.getLatLng().lng );
+    this.movingMarker.bindPopup('lat: ' + this.movingMarker.getLatLng().lat + ',<br> lng: ' + this.movingMarker.getLatLng().lng);
 
     this.movingMarker.addTo(this.map);
     this.map.flyToBounds([this.dataPoints[0][this.inputConfig.fragmentType], this.dataPoints[0][this.inputConfig.fragmentType]], { maxZoom: this.initialMaxZoom });
@@ -399,7 +399,7 @@ export class GpTrackingReplayMapComponent implements OnInit, AfterViewInit {
     const param = {
       dateFrom: startDate,
       dateTo: endDate,
-     // fragmentType: 'c8y_Position',
+      // fragmentType: 'c8y_Position',
       type: this.inputConfig.eventType,
       pageSize: 100,
       revert: true,
@@ -413,7 +413,7 @@ export class GpTrackingReplayMapComponent implements OnInit, AfterViewInit {
       this.dataPoints = [];
       let count = 0;
       response.forEach((res) => {
-        if(res.hasOwnProperty(this.inputConfig.fragmentType)) {
+        if (res.hasOwnProperty(this.inputConfig.fragmentType)) {
           if (res[this.inputConfig.fragmentType].hasOwnProperty('lat') && res[this.inputConfig.fragmentType].hasOwnProperty('lng')) {
             this.dataPoints.push(res);
           } else {
@@ -422,15 +422,15 @@ export class GpTrackingReplayMapComponent implements OnInit, AfterViewInit {
         }
       });
       if (count > 0) {
-        this.alertService.danger("Latitude(lat) and Longitude(lng) values are missing for "+count+ " event(s) of type - "+this.inputConfig.eventType);
+        this.alertService.danger("Latitude(lat) and Longitude(lng) values are missing for " + count + " event(s) of type - " + this.inputConfig.eventType);
       }
       //this.dataPoints = response;
       if (this.dataPoints && this.dataPoints.length > 0) {
-       this.addMarker();
-       this.drawPolyLine(this.dataPoints.length - 1);
+        this.addMarker();
+        this.drawPolyLine(this.dataPoints.length - 1);
       }
-      } else {
-        this.map.fitWorld();
+    } else {
+      this.map.fitWorld();
 
     }
     return response;

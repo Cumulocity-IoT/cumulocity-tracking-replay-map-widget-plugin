@@ -47,8 +47,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
         id: 'tracking-replay-map-widget',
         label: 'Tracking Replay Map',
         previewImage: preview.previewImage,
-        description:
-          'Displays track lines of tracking device with replay feature.',
+        description: 'The Tracking Replay Map Widget displays track lines of tracking device with replay feature.',
         component: GpTrackingReplayMapComponent,
         configComponent: GpTrackingReplayMapConfigComponent,
         data: {

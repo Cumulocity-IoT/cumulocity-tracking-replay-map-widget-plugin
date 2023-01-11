@@ -25,9 +25,9 @@ describe('GpTrackingReplayMapComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GpTrackingReplayMapComponent ]
+      declarations: [GpTrackingReplayMapComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

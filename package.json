@@ -1,7 +1,7 @@
 {
   "name": "cumulocity-tracking-replay-map-widget-plugin",
   "version": "1.0.0-beta",
-  "description": "This is the Cumulocity module federation plugin. This widget plugin displays track lines of tracking device with replay feature.",
+  "description": "The Tracking Replay Map Widget displays track lines of tracking device with replay feature.",
   "scripts": {
     "start": "c8ycli server --env.beta=true",
     "build": "c8ycli build --env.mode=production",
@@ -56,10 +56,10 @@
   "c8y": {
     "application": {
       "name": "Tracking Replay Map Runtime Widget",
-      "description": "Cumulocity Tracking Replay Widget Plugin with module federation",
+      "description": "The Tracking Replay Map Widget displays track lines of tracking device with replay feature.",
       "contextPath": "tracking-replay-runtime-widget",
       "key": "tracking-replay-runtime-widget-application-key",
-      "globalTitle": "Custom widget with Module Federation",
+      "globalTitle": "The Tracking Replay Map Widget displays track lines of tracking device with replay feature.",
       "tabsHorizontal": true,
       "isPackage": true,
       "noAppSwitcher": true,
@@ -70,7 +70,7 @@
           "name": "Cumulocity Tracking Replay Map Widget Plugin",
           "module": "GpTrackingReplayMapModule",
           "path": "./widget/gp-tracking-replay-map.module.ts",
-          "description": "Displays track lines of tracking device with replay feature."
+          "description": "The Tracking Replay Map Widget displays track lines of tracking device with replay feature."
         }
       ],
       "remotes": {

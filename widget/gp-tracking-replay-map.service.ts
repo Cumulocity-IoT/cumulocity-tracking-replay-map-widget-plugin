@@ -19,7 +19,7 @@ import { Injectable } from '@angular/core';
 import { InventoryService } from '@c8y/client';
 
 @Injectable({
-  providedIn:'root'
+  providedIn: 'root'
 })
 export class GpTrackingReplayMapService {
 
@@ -30,7 +30,7 @@ export class GpTrackingReplayMapService {
    *
    * @param deviceId Id of the managed object
    */
-   getTargetObject(deviceId: string): any {
+  getTargetObject(deviceId: string): any {
     return new Promise(
       (resolve, reject) => {
         this.invSvc.detail(deviceId)
