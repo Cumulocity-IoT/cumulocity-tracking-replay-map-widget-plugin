@@ -1,16 +1,20 @@
 {
   "name": "cumulocity-tracking-replay-map-widget-plugin",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "The Tracking Replay Map Widget displays track lines of tracking device with replay feature.",
   "scripts": {
-    "start": "c8ycli server --env.beta=true",
+    "start": "c8ycli server",
     "build": "c8ycli build --env.mode=production",
     "deploy": "c8ycli deploy",
     "postinstall": "ngcc",
     "prebuild": " gulp clean",
     "postbuild": " gulp bundle"
   },
-  "keywords": [],
+  "keywords": [
+    "Cumulocity",
+    "Plugin",
+    "Widget"
+  ],
   "author": "Software AG, Global Presales",
   "license": "Apache 2.0",
   "dependencies": {
@@ -55,10 +59,10 @@
   },
   "c8y": {
     "application": {
-      "name": "Tracking Replay Map Runtime Widget",
+      "name": "Tracking Replay Map Widget",
       "description": "The Tracking Replay Map Widget displays track lines of tracking device with replay feature.",
-      "contextPath": "tracking-replay-runtime-widget",
-      "key": "tracking-replay-runtime-widget-application-key",
+      "contextPath": "sag-ps-pkg-tracking-replay",
+      "key": "sag-ps-pkg-tracking-replay-application-key",
       "globalTitle": "The Tracking Replay Map Widget displays track lines of tracking device with replay feature.",
       "tabsHorizontal": true,
       "isPackage": true,
@@ -67,7 +71,7 @@
       "requiredPlatformVersion": ">=1016.0.0",
       "exports": [
         {
-          "name": "Cumulocity Tracking Replay Map Widget Plugin",
+          "name": "Tracking Replay Map Widget",
           "module": "GpTrackingReplayMapModule",
           "path": "./widget/gp-tracking-replay-map.module.ts",
           "description": "The Tracking Replay Map Widget displays track lines of tracking device with replay feature."

@@ -1,8 +1,6 @@
-# Cumulocity Tracking Replay Map Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-tracking-replay-map-widget-plugin/releases/download/1.0.0-beta/tracking-replay-runtime-widget-1.0.0-beta.zip)
+# Cumulocity Tracking Replay Map Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-tracking-replay-map-widget-plugin/releases/download/1.0.0/sag-ps-pkg-tracking-replay-1.0.0.zip)
 
 The Cumulocity Tracking Replay widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit. The Cumulocity Tracking Replay widget helps you to display track lines of the tracking device with replay feature on map.
-
-### Please note that this plugin is in currently under BETA mode.
 
 ### Please choose Tracking Replay Map Widget release based on Cumulocity/Application builder version:
 
@@ -34,7 +32,7 @@ The Cumulocity Tracking Replay widget is the Cumulocity module federation plugin
 
 ### Runtime Widget Deployment?
 
-* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-tracking-replay-map-widget-plugin/releases/download/1.0.0-beta/tracking-replay-runtime-widget-1.0.0-beta.zip) and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages 
+* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-tracking-replay-map-widget-plugin/releases/download/1.0.0/sag-ps-pkg-tracking-replay-1.0.0.zip) and install via Administrations --> Ecosystems --> Applications --> Packages 
 
 ## QuickStart
   

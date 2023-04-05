@@ -62,27 +62,28 @@
     </div>
   </div>
   <div class="widget-gps-tracking-content">
-    <div class="">
+    <div class="row col-sm-12">
       <div class="col-sm-6 col-md-10 col-xs-12 flex-item-v-stretch widget-gps-tracking-map" #trmapRef
-        [style.height.px]="height"></div>
-    </div>
-    <ul class="event-list list-group col-sm-6 col-md-2 col-xs-12 event-list flex-item-v-stretch modal-inner-scroll"
-      [style.height.px]="height">
-      <h4 class="heading">Tracking events</h4>
-      <div *ngIf="dataPoints && dataPoints.length === 0">
-        <hr style="margin:0;" />
-        <div class=" c8y-empty-state text-left">
-          <h1 class="c8y-icon c8y-icon-location c8y-icon-duocolor"></h1>
-          <p>No tracking events found</p>
-        </div>
+        [style.height.px]="height">
       </div>
-      <li class="list-group-item tracking-event" *ngFor="let dataPoint of dataPoints; let i = index"
-        (click)="playTillPoint(i)">
-        <div class="list-item-icon">
-          <i c8y-icon="c8y-location" class="c8y-icon c8y-icon-location"></i>
+      <ul class="event-list list-group col-sm-6 col-md-2 col-xs-12 event-list flex-item-v-stretch modal-inner-scroll"
+        [style.height.px]="height">
+        <h4 class="heading">Tracking events</h4>
+        <div *ngIf="dataPoints && dataPoints.length === 0">
+          <hr style="margin:0;" />
+          <div class=" c8y-empty-state text-left">
+            <h1 class="c8y-icon c8y-icon-location c8y-icon-duocolor"></h1>
+            <p>No tracking events found</p>
+          </div>
         </div>
-        {{dataPoint.time | date : 'medium'}}
-      </li>
-    </ul>
+        <li class="list-group-item tracking-event" *ngFor="let dataPoint of dataPoints; let i = index"
+          (click)="playTillPoint(i)">
+          <div class="list-item-icon">
+            <i c8y-icon="c8y-location" class="c8y-icon c8y-icon-location"></i>
+          </div>
+          {{dataPoint.time | date : 'medium'}}
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
