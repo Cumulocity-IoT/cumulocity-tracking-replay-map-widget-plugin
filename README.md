@@ -38,8 +38,6 @@ The Cumulocity Tracking Replay widget is the Cumulocity module federation plugin
   
 This guide will teach you how to add widget in your existing or new dashboard.
 
-**NOTE:** This guide assumes you have followed the [Installation instructions](#Installation)
-
 1. Open you application from App Switcher
   
 2. Add new dashboard or navigate to existing dashboard
