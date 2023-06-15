@@ -36,26 +36,26 @@
         </div>
         <div class="btn-group  navbar-form mb-10">
           <button type="button" title="Filter date range" class="btn btn-default btn-sm" (click)="filter()">
-            <i c8y-icon="filter" class="fa fw fa-filter"></i>
+            <i c8y-icon="filter" class="dlt-c8y-icon-filter"></i>
           </button>
         </div>
       </div>
       <div class="btn-group action-button-menu mb-10">
         <button class="btn btn-default btn-sm" title="Slower" (click)="slower()">
-          <i c8y-icon="fast-backward" class="fa fw fa-fast-backward"></i>
+          <i c8y-icon="fast-backward" class="dlt-c8y-icon-fast-backward"></i>
         </button>
         <button class="btn btn-default btn-sm" title="Play" *ngIf="!isRunning()" (click)="play()">
-          <i c8y-icon="play" class="fa fw fa-play"></i>
+          <i c8y-icon="play" class="dlt-c8y-icon-play-circle"></i>
         </button>
         <button class="btn btn-default btn-sm" title="Play" *ngIf="isRunning()" (click)="pause()">
-          <i c8y-icon="play" class="fa fw fa-pause"></i>
+          <i c8y-icon="play" class="dlt-c8y-icon-pause-circle"></i>
         </button>
 
         <button class="btn btn-default btn-sm" title="Faster" (click)="faster()">
-          <i c8y-icon="fast-forward" class="fa fw fa-fast-forward"></i>
+          <i c8y-icon="fast-forward" class="dlt-c8y-icon-fast-forward"></i>
         </button>
         <button class="btn btn-default btn-sm" title="Reset" (click)="refresh()">
-          <i c8y-icon="repeat" class="fa fw fa-repeat"></i>
+          <i c8y-icon="repeat" class="dlt-c8y-icon-repeat"></i>
         </button>
       </div>
 

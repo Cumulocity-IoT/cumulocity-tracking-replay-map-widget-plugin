@@ -1,4 +1,4 @@
-# Cumulocity Tracking Replay Map Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-tracking-replay-map-widget-plugin/releases/download/1.0.0/sag-ps-pkg-tracking-replay-1.0.0.zip)
+# Cumulocity Tracking Replay Map Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-tracking-replay-map-widget-plugin/releases/download/1.0.1/sag-ps-pkg-tracking-replay-1.0.1.zip)
 
 The Cumulocity Tracking Replay widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit. The Cumulocity Tracking Replay widget helps you to display track lines of the tracking device with replay feature on map.
 
@@ -54,7 +54,9 @@ Congratulations! Tracking Replay Map is configured.
 
 ## User Guide
 
-*  **Target assets or devices:** User can select a device. Based on device, list of devices will be display on Map. Only those devices are visible on map where position attributes are configured. 
+*  **Target assets or devices:** User can select a device. Based on device, list of devices will be display on Map. Only those devices are visible on map where position attributes are configured.
+
+
 
 **Tracking Replay Map On Screen Options:**
  
@@ -73,7 +75,12 @@ Congratulations! Tracking Replay Map is configured.
   *  **Reload**: Useful for force reload/refresh map.
   *  **Zoom in/ out** : Zooms in/out of the map.
 
-------------------------------
+  **Tracking Replay Map On Widget Configuration:**
+
+	*	**Event Type** 	Provide Event type (eg:c8y_LocationUpdate)
+	*	**Fragment Type** Provide fragment name(e.g. c8y_Position) which should have lat and lng
+
+------------------------------------------
 
 This widget is provided as-is and without warranty or support. They do not constitute part of the Software AG product suite. Users are free to use, fork and modify them, subject to the license agreement. While Software AG welcomes contributions, we cannot guarantee to include every contribution in the master project.
 _____________________
