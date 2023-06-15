@@ -77,8 +77,8 @@ Congratulations! Tracking Replay Map is configured.
 
   **Tracking Replay Map On Widget Configuration:**
 
-	*	**Event Type** 	Provide Event type (eg:c8y_LocationUpdate)
-	*	**Fragment Type** Provide fragment name(e.g. c8y_Position) which should have lat and lng
+	*	**Event Type**: Provide Event type (eg:c8y_LocationUpdate)
+	*	**Fragment Type**: Provide fragment name(e.g. c8y_Position) which should have lat and lng
 
 ------------------------------------------
 
