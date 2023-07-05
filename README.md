@@ -8,7 +8,7 @@ The Cumulocity Tracking Replay widget is the Cumulocity module federation plugin
 |--------------------|------------|------------------------------------|
 | 2.x.x(coming soon) | >= 1016.x.x| 1.x.x                              |
 
-![tracking replay image](https://user-images.githubusercontent.com/83225057/120200287-ccd36180-c241-11eb-81b2-302d8ef993aa.png)
+![Images](images/replay.png)
 
 ## Features
 *  **Tracking Events:** Displays the position in map at a particular time.

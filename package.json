@@ -81,7 +81,17 @@
         "widget-plugin": [
           "GpTrackingReplayMapModule"
         ]
-      }
+      },
+      "copy": [
+        {
+          "from":"images/replay.png",
+          "to":"images/replay.png"
+        },
+        {
+          "from":"LICENSE",
+          "to":"LICENSE.txt"
+        }
+      ]
     },
     "cli": {}
   },
