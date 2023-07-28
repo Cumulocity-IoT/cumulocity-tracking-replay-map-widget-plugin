@@ -6,7 +6,7 @@ The Cumulocity Tracking Replay widget is the Cumulocity module federation plugin
 
 |APPLICATION BUILDER | CUMULOCITY | TRACKING REPLAY MAP WIDGET PLUGIN  |
 |--------------------|------------|------------------------------------|
-| 2.x.x(coming soon) | >= 1016.x.x| 1.x.x                              |
+| 2.x.x		     | >= 1016.x.x| 1.x.x                              |
 
 ![Images](images/replay.png)
 
